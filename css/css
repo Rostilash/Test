@@ -1,0 +1,14 @@
+body {
+	height: auto !important; /* undo height that JS set in distributeHeight */
+	min-height: 0 !important; /* undo the min-height from each view's specific stylesheet */
+}
+
+body { /* only works in newer browsers */
+	padding-bottom: 1em; /* ...gives space within the skeleton. also ensures min height in a way */
+}
+
+body {
+	/* provides a min-height for the row, but only effective for IE, which exaggerates this value,
+	   making it look more like 3em. for other browers, it will already be this tall */
+	height: 1em;
+}
