@@ -1,0 +1,3 @@
+body { /* only works in newer browsers */
+	padding-bottom: 1em; /* ...gives space within the skeleton. also ensures min height in a way */
+}
