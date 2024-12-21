@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <body>
 <h1> Hello World <h1>
 </body>
 </html>
+=======
+<!DOCTYPE>
+<html>
+<body>
+ <div>
+  <h1> Hello World <h1>
+ </div>
+ </body>
+</html>
+>>>>>>> test
