@@ -1,4 +1,170 @@
-body{
-background:#FFF;
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Контейнер для центрування контенту */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Шапка сайту */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header nav ul li {
+    margin: 0 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Основна частина сайту */
+main {
+    padding: 40px 0;
+}
+
+.block {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Використовуємо flexbox для розташування зображення та тексту */
+    flex-wrap: wrap;
+}
+
+.book-image-container {
+    flex: 0 0 250px; /* Задаємо фіксовану ширину для зображення */
+    margin-right: 20px; /* Між зображенням та текстом буде відступ */
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-text {
+    flex: 1; /* Залишаємо текстовій частині більше місця */
+}
+
+.book-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.book-text p {
+    font-size: 1rem;
+}
+
+/* Футер */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Адаптивний дизайн для мобільних пристроїв */
+
+/* Медіа-запит для екрану з шириною менше 768px (мобільні пристрої) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Зменшуємо ширину контейнера */
+    }
+
+    .header h1 {
+        font-size: 2rem; /* Зменшуємо розмір заголовка */
+    }
+
+    .header nav ul {
+        flex-direction: column; /* Перехід на вертикальне розташування меню */
+        margin-top: 20px;
+    }
+
+    .header nav ul li {
+        margin: 10px 0; /* Збільшуємо відстань між пунктами меню */
+    }
+
+    .block h2 {
+        font-size: 1.5rem; /* Зменшуємо розмір заголовків блоків */
+    }
+
+    .block p {
+        font-size: 1rem; /* Зменшуємо розмір тексту в блоках */
+    }
+
+    .footer p {
+        font-size: 0.9rem; /* Зменшуємо шрифт в футері */
+    }
+
+    /* Для маленьких екранів (менше ніж 480px) */
+    .book-image-container {
+        flex: 0 0 100%; /* Зображення займає всю ширину на маленьких екранах */
+        margin-bottom: 20px; /* Відступ знизу для зображення */
+    }
+}
+
+/* Медіа-запит для екрану з шириною менше 480px (мобільні пристрої з маленьким екраном) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem; /* Зменшуємо розмір заголовка ще більше */
+    }
+
+    .header nav ul li {
+        margin: 8px 0; /* Зменшуємо відстань між пунктами меню */
+    }
+
+    .block {
+        padding: 15px; /* Зменшуємо відступи в блоках */
+    }
+
+    .book-text h2 {
+        font-size: 1.3rem; /* Зменшуємо заголовки в блоках */
+    }
+
+    .book-text p {
+        font-size: 0.9rem; /* Зменшуємо розмір тексту */
+    }
+
+    .footer p {
+        font-size: 0.8rem; /* Зменшуємо розмір шрифту футера */
+    }
 }
