@@ -101,6 +101,33 @@ main {
 .footer p {
     font-size: 1rem;
 }
+/* Стилі для зворотного відліку */
+.countdown {
+    font-size: 3rem; /* Розмір шрифта */
+    font-weight: bold; /* Жирний шрифт */
+    color: #ff6600; /* Колір тексту */
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out; /* Анімація при завантаженні */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .countdown {
+        font-size: 2rem; /* Зменшимо шрифт на мобільних пристроях */
+    }
+}
+
 
 /* Адаптивний дизайн для мобільних пристроїв */
 
