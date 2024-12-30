@@ -17,6 +17,20 @@
                     <li><a href="#">Головна</a></li>
                     <li><a href="#">Про нас</a></li>
                     <li><a href="#">Контакти</a></li>
+					<li><a href="#" id="calendar-btn">🗓️ Календар</a></li> <!-- Додаємо іконку календаря -->
+					<!-- Календар -->
+					<div id="calendar-container" class="calendar-container" style="display:none;">
+						<button id="close-calendar-btn">Закрити</button> <!-- Кнопка Закрити -->
+						<div class="calendar-header">
+							<button id="prev-month-btn">←</button>
+							<span id="month-year"></span>
+							<button id="next-month-btn">→</button>
+						</div>
+						<table id="calendar-table">
+							<!-- Тут буде рендеритись календар -->
+						</table>
+					</div>
+
                 </ul>
             </nav>
 
@@ -69,5 +83,6 @@
 
     <!-- Підключення JavaScript -->
     <script src="js/countdown.js"></script>
+	<script src="js/calendar.js"></script>
 </body>
 </html>
