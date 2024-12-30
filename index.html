@@ -60,38 +60,74 @@
                 </div>
             </section>
 
-<!-- Другий блок - Таймер -->
-<section class="block block-2">
-    <h2>Таймер до 00:00</h2>
-    <div class="timer-container">
-        <label for="hours-input">Години:</label>
-        <input type="number" id="hours-input" min="0" value="0" />
-        
-        <label for="minutes-input">Хвилини:</label>
-        <input type="number" id="minutes-input" min="0" max="59" value="0" />
-        
-        <label for="seconds-input">Секунди:</label>
-        <input type="number" id="seconds-input" min="0" max="59" value="0" />
-        
-        <button id="start-timer-btn">Запустити таймер</button>
-        <p id="timer-display">00:00:00</p>
-    </div>
-</section>
+			<!-- Другий блок - Таймер -->
+			<section class="block block-2">
+				<h2>Таймер</h2>
+				<div class="timer-container">
+					<label for="hours-input">Години:</label>
+					<input type="number" id="hours-input" min="0" value="0" />
+					
+					<label for="minutes-input">Хвилини:</label>
+					<input type="number" id="minutes-input" min="0" max="59" value="0" />
+					
+					<label for="seconds-input">Секунди:</label>
+					<input type="number" id="seconds-input" min="0" max="59" value="0" />
+					
+					<button id="start-timer-btn">Запустити таймер</button>
+					<p id="timer-display">00:00:00</p>
+				</div>
+			</section>
 
-<!-- Пупап вікно для повідомлення -->
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <p>БАХ!</p>
-        <button id="close-popup-btn">Закрити</button>
-    </div>
-</div>
+			<!-- Пупап вікно для повідомлення -->
+			<div id="popup" class="popup">
+				<div class="popup-content">
+					<p>БАХ!</p>
+					<button id="close-popup-btn">Закрити</button>
+				</div>
+			</div>
 
-            <!-- Третій блок -->
-            <section class="block block-3">
-                <h2>Блок 3</h2>
-                <p>Це третій блок контенту на сайті.</p>
-            </section>
-        </div>
+			<!-- Третій блок - Калькулятор -->
+			<section class="block block-3">
+				<h2>Калькулятор</h2>
+				<button id="open-calculator-btn">Відкрити калькулятор</button>
+			</section>
+
+			<div id="calculator-popup">
+				<input type="text" id="calculator-display" disabled />
+				<div>
+					<button id="clear-btn" data-value="C">C</button>
+					<button ></button>
+					<button ></button>
+					<button class="calc-btn" data-value="÷">÷</button>
+				</div>
+				<div>
+					<!-- Рядок кнопок -->
+					<button class="calc-btn" data-value="7">7</button>
+					<button class="calc-btn" data-value="8">8</button>
+					<button class="calc-btn" data-value="9">9</button>
+					<button class="calc-btn" data-value="×">×</button>
+				</div>
+				<div>
+					<button class="calc-btn" data-value="4">4</button>
+					<button class="calc-btn" data-value="5">5</button>
+					<button class="calc-btn" data-value="6">6</button>
+					<button class="calc-btn" data-value="-">-</button>
+				</div>
+				<div>
+					<button class="calc-btn" data-value="1">1</button>
+					<button class="calc-btn" data-value="2">2</button>
+					<button class="calc-btn" data-value="3">3</button>
+					<button class="calc-btn" data-value="+">+</button>
+
+				</div>
+				<div>
+					<button ></button>
+					<button class="calc-btn" data-value="0">0</button>
+					<button class="calc-btn" data-value=".">.</button>
+					<button id="equals-btn" data-value="=">=</button>
+				</div>
+				<button id="close-calculator-btn">Закрити</button>
+			</div>
     </main>
 
     <!-- Футер -->
@@ -105,5 +141,6 @@
     <script src="js/countdown.js"></script>
 	<script src="js/calendar.js"></script>
 	<script src="js/timer.js"></script>
+	<script src="js/conculator.js"></script>
 </body>
 </html>

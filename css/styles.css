@@ -258,6 +258,117 @@ button:hover {
     background-color: #e53935;
 }
 
+/* Загальні стилі для калькулятора */
+#calculator-popup {
+	height: 500px;
+	weight: 500px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Стиль для дисплея калькулятора */
+#calculator-display {
+    width: 100%;
+    height: 60px;
+    font-size: 2.5em;
+    text-align: right;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Стилі для кнопок калькулятора */
+#calculator-popup div button {
+    /*padding: 20px;
+    font-size: 1.6em;*/
+    border: 2px solid #333;
+    background-color: #333;
+    color: white;
+    margin: 5px;
+    border-radius: 10px;
+    width: 22.5%;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Анімація при натисканні */
+    box-sizing: border-box;
+}
+
+/* Кнопки при наведенні */
+#calculator-popup button:hover {
+    background-color: #444;
+    transform: scale(1.1); /* Легке збільшення кнопки */
+}
+
+/* Кнопки при натисканні */
+#calculator-popup button:active {
+    background-color: #555;
+    transform: scale(1.05); /* Легке зменшення кнопки при натисканні */
+}
+
+/* Стилі для кнопок операцій (+, -, ×, ÷) */
+#calculator-popup button[data-value='+'],
+#calculator-popup button[data-value='-'],
+#calculator-popup button[data-value='×'],
+#calculator-popup button[data-value='÷'] {
+    background-color: #ff9f00;
+}
+
+/* Стилі для кнопки "C" (очистити) */
+#calculator-popup #clear-btn {
+    background-color: #ff4040;
+}
+
+/* Стиль для кнопки "=" */
+#calculator-popup #equals-btn {
+    background-color: #4caf50;
+    width: 22.5%; /* Кнопка рівно по ширині */
+    border-radius: 10px;
+}
+
+/* Стиль для кнопки "Закрити" */
+#calculator-popup #close-calculator-btn {
+    background-color: #555;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#calculator-popup #close-calculator-btn:hover {
+    background-color: #666;
+}
+
+/* Сегмент кнопок, щоб "+" був поруч з "-" */
+#calculator-popup button#button-plus {
+    order: 1; /* Кнопка "+" йде після "-" */
+}
+
+#calculator-popup button#button-minus {
+    order: 0; /* Кнопка "-" йде перед "+" */
+}
+
+/* Кнопки для очищення та рівня
+#calculator-popup #clear-btn, #equals-btn {
+    width: 20%;
+    margin-top: 10px;
+}
+ */
+
 /* Адаптивний дизайн для мобільних пристроїв */
 
 /* Медіа-запит для екрану з шириною менше 768px (мобільні пристрої) */
