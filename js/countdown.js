@@ -1,4 +1,4 @@
-// Функція для форматування часу з додаванням нулів
+﻿// Функція для форматування часу з додаванням нулів
 function formatTime(unit) {
     return unit < 10 ? '0' + unit : unit;
 }
@@ -6,27 +6,27 @@ function formatTime(unit) {
 // Функція для оновлення зворотного відліку
 function updateCountdown() {
     const now = new Date(); // Поточний час
-    const newYear = new Date('2025-01-01T00:00:00'); // Час нового року
+    const Birthday = new Date('2025-01-05T00:00:00'); // Час дня народження 
 
     // Різниця в мілісекундах
-    const timeDifference = newYear - now;
+    const timeDifference = Birthday - now;
 
     // Розрахунок часу
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
+	
     // Виведення зворотного відліку
     document.getElementById('countdown').innerHTML =
-        formatTime(days) + ' Дн. ' + 
-        formatTime(hours) + ' Г. ' + 
-        formatTime(minutes) + ' М. ' + 
-        formatTime(seconds) + ' С.';
+        formatTime(days) + ' days/ ' + 
+        formatTime(hours) + ':' + 
+        formatTime(minutes) + ':' + 
+        formatTime(seconds) + '.';
 
     // Якщо відлік завершений
     if (timeDifference < 0) {
-        document.getElementById('countdown').innerHTML = 'З Новим Роком!';
+        document.getElementById('countdown').innerHTML = 'З Днем народження!!!';
     }
 }
 
