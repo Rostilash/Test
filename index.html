@@ -11,13 +11,13 @@
     <!-- Шапка сайту -->
     <header class="header">
         <div class="container">
-            <h1>До дня народення залишилося</h1>
+            <h1>До дня народження залишилося</h1>
             <nav>
                 <ul>
                     <li><a href="#">Головна</a></li>
                     <li><a href="#">Про нас</a></li>
                     <li><a href="#">Контакти</a></li>
-					<li><a href="#" id="calendar-btn">🗓️ Календар</a></li> <!-- Додаємо іконку календаря -->
+					<li><a href="#" id="calendar-btn">Календар</a></li> <!-- Додаємо іконку календаря -->
 					<!-- Календар -->
 					<div id="calendar-container" class="calendar-container" style="display:none;">
 						<button id="close-calendar-btn">Закрити</button> <!-- Кнопка Закрити -->
@@ -41,7 +41,14 @@
 
     <!-- Основна частина сайту -->
     <main>
+	
         <div class="container">
+		
+			<section>
+				<div>
+					<button class="btm"> <span id="bsp"> Клацай ! </span> </button>
+				</div> 
+			</section>
 		
             <!-- Перший блок (інформація про книгу) -->
             <section class="block block-1">
@@ -153,5 +160,6 @@
 	<script src="js/calendar.js"></script>
 	<script src="js/timer.js"></script>
 	<script src="js/conculator.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
