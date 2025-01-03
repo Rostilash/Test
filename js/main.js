@@ -211,6 +211,65 @@ console.log(num1+num2-num2/num2); */
 	// }
 		// console.log(res);
 	
+	// let i = 0
+	// for ( i; i < 5; i++){	
+		// console.log(i);
+			// for (let j = 3; j > 0; j--){
+				// console.log(j);
+			// }
+	// }
+	
+	// let i = 0;
+	
+// while(true){
+	// console.log(i);
+	// i++;
+	// if(i == 5) break;
+// }	
+	
+	// let count = 1;
+	// do{
+		// console.log(count);
+		// count++;
+		
+		// if( count === 6) {
+			// console.log('Кінець');
+			// break;
+			
+		// }
+	// }while(true)
+	
+	// let i = 0;
+	// let j = 10;
+	
+	// do{
+		// console.log(`У нас виходить що,
+		// і = ${i}
+		// j = ${j}
+		// `);
+		// i++;
+		// j--;
+		// if(i == 11) break;
+	// }while(true)
+	
+	// Стиль для напису тексту
+	// Camelcase
+	 // let firstName = "jack";
+	// snakecase
+	 // let last_name = "";
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
